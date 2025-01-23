@@ -1,4 +1,4 @@
-package services;
+package com.larissa.services;
 
 import com.google.cloud.vertexai.VertexAI;
 import com.google.cloud.vertexai.api.GenerateContentResponse;

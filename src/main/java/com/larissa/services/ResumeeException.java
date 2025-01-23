@@ -1,4 +1,4 @@
-package services;
+package com.larissa.services;
 
 public class ResumeeException extends Exception{
     public ResumeeException(String msg){
