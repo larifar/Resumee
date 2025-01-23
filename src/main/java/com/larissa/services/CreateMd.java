@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 public class CreateMd {
     private String path = System.getenv("PATH_RESUMEE_CREATE");
 
-    public void createMd(String name,String resume) throws ResumeeException {
+    public String createMd(String name,String resume) throws ResumeeException {
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMyyyy");
         String date = now.format(formatter);
@@ -18,6 +18,7 @@ public class CreateMd {
         try {
             Files.writeString(Paths.get(path+name), resume, StandardCharsets.UTF_8);
             System.out.println("Arquivo criado com sucesso");
+            return name;
         } catch (IOException e) {
             throw new ResumeeException("Erro ao criar o arquivo: " + e.getMessage());
         }
