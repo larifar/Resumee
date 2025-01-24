@@ -12,7 +12,7 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 
 public class VerifyFiles {
-    private final String path = System.getenv("PATH_RESUMEE_READ");
+    private final String path = System.getenv("PATH_RESUMEE_READ"); // o mesmo caminho do diretório dos arquivos .md que precisam ser lidos
 
     private Boolean exists(File directory){
         return directory.exists() && directory.isDirectory();

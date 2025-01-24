@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 public class ReadMd {
-    private final String path = System.getenv("PATH_RESUMEE_READ")+ "\\";
+    private final String path = System.getenv("PATH_RESUMEE_READ")+ "\\"; // caminho do diretório dos arquivos .md
     public String read(String file) throws ResumeeException {
         try {
             String content = Files.readString(Paths.get(path+file), StandardCharsets.UTF_8);
