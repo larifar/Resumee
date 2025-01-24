@@ -25,6 +25,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class GoogleCalendar {
+    private static final String AGENDA_ID = System.getenv("AGENDA_ID_GOOGLE"); //para agenda principal coloque "primary"
     private static final String APPLICATION_NAME = "Resumee Calendar";
     private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
     private static final String TOKENS_DIRECTORY_PATH = "tokens";
@@ -69,8 +70,7 @@ public class GoogleCalendar {
         event.setStart(days[0]);
         event.setEnd(days[1]);
 
-        String calendarId = "primary"; // Use "primary" para a agenda principal
-        event = service.events().insert(calendarId, event).execute();
+        event = service.events().insert(AGENDA_ID, event).execute();
         System.out.println("Event created: " + event.getHtmlLink());
     }
 }
