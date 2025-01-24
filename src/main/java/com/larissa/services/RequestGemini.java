@@ -8,12 +8,12 @@ import com.google.cloud.vertexai.generativeai.ResponseHandler;
 import java.io.IOException;
 
 public class RequestGemini {
-    private final String projectId = System.getenv("CLOUD_PROJECT_ID");
+    private final String projectId = System.getenv("CLOUD_PROJECT_ID"); // id do projeto do cloud
     private final String location = "us-central1";
-    private final String modelName = "gemini-1.5-flash-001";
+    private final String modelName = "gemini-1.5-flash-001"; // versão do gemini
 
     public String request(String resume) throws IOException {
-        String textPrompt =
+        String textPrompt =// edite o prompt de acordo com sua necessidade
                 "Olá Gemini. Resuma em um texto conciso de até uma página do word o texto a seguir. Em seguida faça 3 perguntas discursivas relacionadas ao texto:\n\n'" + resume;
 
         return textInput(projectId, location, modelName, textPrompt);

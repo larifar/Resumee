@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class CreateMd {
-    private String path = System.getenv("PATH_RESUMEE_CREATE");
+    private String path = System.getenv("PATH_RESUMEE_CREATE"); // caminho do diretório para onde os resumos criados irão
 
     public String createMd(String name,String resume) throws ResumeeException {
         LocalDateTime now = LocalDateTime.now();

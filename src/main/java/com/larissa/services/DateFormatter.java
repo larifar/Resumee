@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 
 public class DateFormatter {
-    private static final int START_HOUR = 10;
+    private static final int START_HOUR = 10; // horario do dia que irá começar o evento
     private static final int END_HOUR = 11;
     public static EventDateTime[] setEventDate(LocalDate localDate){
         LocalDateTime initialLocal = localDate.atTime(START_HOUR, 0);
