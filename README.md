@@ -1,5 +1,7 @@
 # RESUMEE: Resumos Inteligentes com IA
 RESUMEE transforma suas anotações do Obsidian (ou arquivos Markdown) em resumos concisos de até uma página e gera 3 perguntas relevantes para otimizar seus estudos com o poder da IA Gemini.
+![image](https://github.com/user-attachments/assets/9fa901d3-c0b9-483d-b582-ed85318cf314)
+
 #### Novas features
 - Agendamento de revisões: sincronização com o Google Calendar para lembrar a revisão dos resumos em intervalos regulares (ex: 1, 7 e 21 dias).
 ## Tecnologias
